@@ -1,6 +1,7 @@
 import React from 'react'
 import ExerciseList from '../components/ExcerciseList'
 import Welcome from '../components/Welcome'
+import ButtonAdd from '../components/ButtonAdd'
 
 class Exercises extends React.Component {
     constructor(props){
@@ -39,6 +40,7 @@ class Exercises extends React.Component {
                 <ExerciseList
                     exercises={this.state.data}
                 />
+                <ButtonAdd/>
             </div>
         )
     }
