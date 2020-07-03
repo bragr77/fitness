@@ -4,9 +4,14 @@ import Welcome from '../components/Welcome'
 import ButtonAdd from '../components/ButtonAdd'
 
 class Exercises extends React.Component {
-    constructor(props){
+    /*  constructor(props){
         super(props)
-        this.state = {
+        this.state ={}
+    } */
+    // para inicializar un estado de un componente de clase en reactjs usamos un cosntructor y le damos un this state
+    // como esta arriba con la nueva caractristica de babel que esta embebido en reactjs no es necesario
+    // solamente declaramos es state (properties initialized) y listo como se hace a continuación y babel se encarga de tansformarlo
+        state = {
             data: [{
                 "id": 1,
                 "title": "Technique Guides",
@@ -30,7 +35,7 @@ class Exercises extends React.Component {
                 "rightColor": "#F76B1C"
             }]
         }
-    }
+    
     render(){
         return(
             <div>
